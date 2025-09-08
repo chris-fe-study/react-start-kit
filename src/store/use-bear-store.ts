@@ -10,7 +10,7 @@ type BearState = {
   updateBears: (newBears: number) => void;
 };
 
-export const useStore = create<BearState>()(
+export const useBearStore = create<BearState>()(
   persist(
     (set) => ({
       bears: 0,

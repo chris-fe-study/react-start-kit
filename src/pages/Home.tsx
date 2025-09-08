@@ -1,9 +1,9 @@
 import { buttonVariants, Button } from "@/components/ui/button";
-import { useStore } from "@/store";
-export function Main() {
-  const bears = useStore((s) => s.bears);
-  const increasePopulation = useStore((s) => s.increasePopulation);
-  const removeAllBears = useStore((s) => s.removeAllBears);
+import { useBearStore } from "@/store/use-bear-store";
+export function Home() {
+  const bears = useBearStore((s) => s.bears);
+  const increasePopulation = useBearStore((s) => s.increasePopulation);
+  const removeAllBears = useBearStore((s) => s.removeAllBears);
 
   return (
     <>
