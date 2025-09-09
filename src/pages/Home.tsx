@@ -1,5 +1,5 @@
 import { buttonVariants, Button } from "@/components/ui/button";
-import { useBearStore } from "@/store/use-bear-store";
+import { useBearStore } from "@/store";
 export function Home() {
   const bears = useBearStore((s) => s.bears);
   const increasePopulation = useBearStore((s) => s.increasePopulation);
