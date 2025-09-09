@@ -1,9 +1,9 @@
-import { Main } from "@/pages/main";
+import { Home } from "@/pages/Home";
 import { createBrowserRouter } from "react-router";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main />,
+    element: <Home />,
   },
 ]);
