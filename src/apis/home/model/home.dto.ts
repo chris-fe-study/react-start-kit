@@ -7,3 +7,4 @@ export interface Home {
 }
 
 export type HomeResponseDTO = ResponseDTO<Home>;
+export type HomeListResponseDTO = ResponseDTO<Home[]>;

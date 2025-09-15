@@ -1,9 +1,12 @@
 import { publicApi } from "@/lib/api-client";
-import { type HomeResponseDTO } from "../model/home.dto";
+import {
+  type HomeListResponseDTO,
+  type HomeResponseDTO,
+} from "../model/home.dto";
 import { homeApiEndPoint } from "../config/home-endpoint";
 
 export const getUser = async () => {
-  const response = await publicApi.get<HomeResponseDTO>(
+  const response = await publicApi.get<HomeListResponseDTO>(
     homeApiEndPoint.getHome()
   );
   return response.data.data;
