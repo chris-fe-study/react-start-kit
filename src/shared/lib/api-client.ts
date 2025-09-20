@@ -1,7 +1,8 @@
 import axios, { type CreateAxiosDefaults } from "axios";
+import { env } from "../config";
 
 const config: CreateAxiosDefaults = {
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: env.apiUrl,
   headers: {
     "Content-Type": "application/json",
   },
